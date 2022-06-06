@@ -7,83 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
 <body>
 
-    <header class="header">
+    <header id="mainHeader" class="header">
         <div class="container">
             <div class="row">
-                <a class="header-items__item" href="">Logo</a>
-                <ul class="header-items">
-                    <li>
-                        <a class="header-items__item" href="">About me</a>
-                    </li>
-                    <li>
-                        <a class="header-items__item" href="">Skills</a>
-                    </li>
-                    <li>
-                        <a class="header-items__item" href="">Portfolio</a>
-                    </li>
-                    <button class="header-items__btn" type="submit">Contact me</button>
-                </ul>
+                <a class="main-nav-link" href="#">Bahrom Rasulov</a>
+                <button class="menu-toggle open" onclick="openMenu()">
+                    <img src="./img/menu.svg" alt=""></button>
+                <button id="close" class="menu-toggle close" onclick="closeMenu()">
+                    <img src="./img/close.svg" alt=""></button>
+                <nav id="mainnav" class=" main-nav">
+                    <a class="main-nav-link" href="">About me</a>
+                    <a class="main-nav-link" href="">Skills</a>
+                    <a class="main-nav-link" href="">Portfolio</a>
+                    <a href="#contact">
+                    <button  id="button" class="header-items__btn" type="button">Contact me
+                     </button>
+                    </a>
+                </nav>
 
             </div>
         </div>
     </header>
     <section>
-        <div class="container0">
+        <div class="containe00r">
             <div class="row">
                 <div class="column">
                     <div class="col-text">
-                        <span class="col-text_span">Hi, I am</span>
-                        <h1 class="col-text_name">Bahrom Rasulov</h1>
-                        <span class="col-text_span__helper">Graphic Design </span>
+                        <span class="col-text_name">Xush Kelibsiz</span>
+                        <p class="col-text_span">Sizni sahifamda ko`rib turganimdan xursandman </p>
                     </div>
-                    <div class="socials">
-                        <a class="socials__item" href="https://www.linkedin.com/">
-                            <svg width="48" height="48" viewBox="0 0 148 149" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M33.4985 148.057H2.99632V49.8309H33.4985V148.057ZM18.231 36.432C8.47738 36.432 0.566132 28.3532 0.566132 18.5996C0.566132 13.9146 2.42724 9.4215 5.74005 6.1087C9.05285 2.7959 13.546 0.934784 18.231 0.934784C22.916 0.934784 27.4091 2.7959 30.7219 6.1087C34.0347 9.4215 35.8958 13.9146 35.8958 18.5996C35.8958 28.3532 27.9813 36.432 18.231 36.432ZM147.658 148.057H117.222V100.241C117.222 88.8453 116.992 74.2313 101.363 74.2313C85.5045 74.2313 83.0744 86.6121 83.0744 99.4199V148.057H52.605V49.8309H81.8593V63.2297H82.2862C86.3584 55.5123 96.3058 47.3678 111.146 47.3678C142.016 47.3678 147.691 67.696 147.691 94.0997V148.057H147.658Z"
-                                    fill="black" />
-                            </svg>
-                        </a>
-                        <a class="socials__item" href="https://t.me/">
-                            <svg width="48" height="48" viewBox="0 0 169 169" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2_72)">
-                                    <path
-                                        d="M156.377 1.05137L4.16208 88.8666C-1.78203 92.282 -1.0267 100.558 4.88457 103.054L39.7939 117.7L134.144 34.5486C135.951 32.9394 138.512 35.4024 136.969 37.2743L57.8561 133.661V160.097C57.8561 167.848 67.2157 170.902 71.8133 165.286L92.667 139.901L133.586 157.043C138.249 159.014 143.57 156.091 144.423 151.066L168.069 9.19579C169.185 2.56203 162.059 -2.23267 156.377 1.05137Z"
-                                        fill="black" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2_72">
-                                        <rect width="168.143" height="168.143" fill="white"
-                                            transform="translate(0.0571899)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                        <a class="socials__item" href="https://www.instagram.com/">
-                            <svg width="48" height="48" viewBox="0 0 169 169" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M84.2185 46.305C63.332 46.305 46.4849 63.1521 46.4849 84.0386C46.4849 104.925 63.332 121.772 84.2185 121.772C105.105 121.772 121.952 104.925 121.952 84.0386C121.952 63.1521 105.105 46.305 84.2185 46.305ZM84.2185 108.57C70.7211 108.57 59.6867 97.5688 59.6867 84.0386C59.6867 70.5083 70.6883 59.5068 84.2185 59.5068C97.7488 59.5068 108.75 70.5083 108.75 84.0386C108.75 97.5688 97.7159 108.57 84.2185 108.57ZM132.297 44.7615C132.297 49.6547 128.356 53.5627 123.496 53.5627C118.602 53.5627 114.694 49.6218 114.694 44.7615C114.694 39.9011 118.635 35.9602 123.496 35.9602C128.356 35.9602 132.297 39.9011 132.297 44.7615ZM157.288 53.6941C156.73 41.9044 154.037 31.4611 145.4 22.8569C136.796 14.2527 126.353 11.5598 114.563 10.9687C102.412 10.279 65.9921 10.279 53.8412 10.9687C42.0843 11.527 31.641 14.2199 23.004 22.8241C14.367 31.4283 11.7069 41.8715 11.1158 53.6612C10.4261 65.8122 10.4261 102.232 11.1158 114.383C11.6741 126.173 14.367 136.616 23.004 145.22C31.641 153.824 42.0515 156.517 53.8412 157.108C65.9921 157.798 102.412 157.798 114.563 157.108C126.353 156.55 136.796 153.857 145.4 145.22C154.004 136.616 156.697 126.173 157.288 114.383C157.978 102.232 157.978 65.845 157.288 53.6941ZM141.591 127.421C139.029 133.857 134.07 138.816 127.601 141.411C117.913 145.253 94.9245 144.366 84.2185 144.366C73.5126 144.366 50.4914 145.22 40.8364 141.411C34.3996 138.849 29.4407 133.89 26.8463 127.421C23.004 117.733 23.8907 94.7445 23.8907 84.0386C23.8907 73.3326 23.0369 50.3115 26.8463 40.6564C29.4079 34.2197 34.3668 29.2608 40.8364 26.6664C50.5243 22.8241 73.5126 23.7108 84.2185 23.7108C94.9245 23.7108 117.946 22.8569 127.601 26.6664C134.037 29.228 138.996 34.1869 141.591 40.6564C145.433 50.3443 144.546 73.3326 144.546 84.0386C144.546 94.7445 145.433 117.766 141.591 127.421Z"
-                                    fill="black" />
-                            </svg>
-                        </a>
 
-                    </div>
+                    <ul id="contact" class="socials">
+                        <li class="socials-item">
+                            <img class="socials__img" src="./img/be-02.svg" alt="alt">
+                            <a class="socials__item" href="https://www.behance.net/bahromrasulov">
+                                <span>Behance (Portfolio)</span>
+                            </a>
+
+                        </li>
+                       
+                        <li class="socials-item">
+                            <img class="socials__img" target="_blank" src="./img/icon-05.svg" alt="youtube">
+                            <a class="socials__item" target="_blank" href="https://www.youtube.com/channel/UC4If9uACLwQYgA1SPJzwA9w">
+                                <span>Youtube Channel</span>  
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <img class="socials__img" src="./img/icon-03.svg" alt="">
+                            <a class="socials__item" target="_blank" href="https://www.instagram.com/bakhromrasul/">
+                                <span>Instagram</span>  
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <img class="socials__img" src="./img/icon-04.svg" alt="alt">
+                            <a class="socials__item" target="_blank" href="https://t.me/bahromrasulov_portfolio">
+                                <span>Telegram (Portfolio)</span>  
+                            </a>
+                        </li>
+                     
+                    </ul>
+            
                 </div>
-                <div class="col">
-                    <img class="col__img" src="./img/image 17.jpg" alt="img">
-                </div>
+                
             </div>
         </div>
     </section>
 
+
+    <script src="./main.js"></script>
+
+
+    <script>
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+        const toggleClose = document.getElementById('close')
+
+        function openMenu() {
+            menu.style.display = 'block';
+            console.log('menu');
+            toggleClose.style.display = 'block'
+            header.classList = 'header on';
+        }
+
+        function closeMenu() {
+            menu.style.display = 'none';
+            toggleClose.style.display = 'none'
+            console.log('close');
+            header.classList = 'header';
+        }
+
+    </script>
 </body>
 
 </html>

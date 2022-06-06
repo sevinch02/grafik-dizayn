@@ -1,0 +1,123 @@
+@media (max-width:991.98px) {
+    .col-text {
+        margin-top: 76px;
+    }
+
+    .col-text_span {
+        font-size: 25px;
+    }
+
+    .col-text_name {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    .col-text_span__helper {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .header .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-items__btn {
+        display: none;
+    }
+
+    section {
+        background-image: url('../img/photo.jpg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+        padding: 0;
+    }
+
+    .column {
+        padding: 0;
+    }
+
+    .col-text_span {
+        font-size: 18px;
+    }
+
+    .col-text_name {
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    .col-text_span__helper {
+        font-size: 18px;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 10%;
+        left: 24px;
+        right: 24px;
+        margin-top: 24px;
+        padding: 15px;
+        width: 95%;
+        text-align: center;
+        background-color: #666;
+        border-radius: 4px;
+        z-index: 1;
+    }
+
+    .header.on:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10%;
+        height: 600px;
+        background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
+    }
+
+    .header.menu-toggle.open {
+        display: block;
+    }
+
+    .header.menu-toggle.close {
+        display: none;
+    }
+
+    .header.on.menu-toggle.open {
+        display: none;
+    }
+
+    .header.on.menu-toggle.close {
+        display: block;
+    }
+
+    .main-nav-link {
+        display: block;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .main-nav-link:after {
+        bottom: 0;
+        width: 50px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+    }
+
+    .close {
+        display: none;
+        position: absolute;
+        top: 95px;
+        right: 35px;
+        z-index: 2;
+    }
+
+
+}
