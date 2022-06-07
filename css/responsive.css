@@ -22,6 +22,9 @@
     .header-items__btn{
         width: 148px;
     }
+    .main-nav{
+        width: 59%;
+    }
 }
 
 @media (max-width:767px) {
@@ -132,5 +135,8 @@
     .col-text{
         margin-top: 32px;
         margin: 0;
+    }
+    .socials__item{
+        font-size: 12px;
     }
 }
