@@ -1,6 +1,10 @@
 @media (max-width:991.98px) {
+    .container{
+        max-width: 600px;
+    }
+    
     .col-text {
-        margin-top: 76px;
+        margin-top: 60px;
     }
 
     .col-text_span {
@@ -14,6 +18,9 @@
 
     .col-text_span__helper {
         font-size: 20px;
+    }
+    .header-items__btn{
+        width: 148px;
     }
 }
 
@@ -120,4 +127,10 @@
     }
 
 
+}
+@media(max-width: 575.98px){
+    .col-text{
+        margin-top: 32px;
+        margin: 0;
+    }
 }

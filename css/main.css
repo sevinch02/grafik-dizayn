@@ -68,8 +68,8 @@ section{
     width: 50%;
 }
 .header-items__btn{
-    width: 220px;
-    height: 60px;
+    width: 181px;
+    height: 44px;
     position: absolute;
     outline: none;
     color: white;
@@ -79,7 +79,7 @@ section{
     border-radius: 50px;
     cursor: pointer;
     overflow: hidden;
-    margin-top: -20px;
+    margin-top: -9px;
     border: none;
 
 }
@@ -110,7 +110,6 @@ opacity: 0;
 /************/
 .column {
     width: 50%;
-    padding: 20px 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,7 +125,7 @@ opacity: 0;
 }
 
 .col-text_span {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     text-align: center;
     color: #212121;
