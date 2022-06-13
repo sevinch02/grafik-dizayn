@@ -126,7 +126,7 @@ opacity: 0;
 
 .col-text_span {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 17px;
     text-align: center;
     color: #212121;
     margin: 0;
@@ -137,7 +137,7 @@ opacity: 0;
     font-size: 57px;
     margin-bottom: 0;
     color: #000;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
 }
 
 

@@ -42,7 +42,7 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center center;
-        padding: 0;
+        /* padding: 0; */
     }
 
     .column {
